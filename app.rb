@@ -47,7 +47,7 @@ class App < Sinatra::Base
 
   get '/fetch_session_id' do
     "You did it! session[:id] value: #{session[:id]}.\nNow, clear the session in the '/logout' route.\nSee the readme for further instructions.\nThen, navigate to the '/logout' path."
-
+  end
   
   get '/logout' do
     session.clear #clear session hash here
